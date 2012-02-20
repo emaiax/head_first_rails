@@ -1,3 +1,5 @@
+<% content_for :title, " - Ad: " + @ad.name %>
+
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -28,3 +30,6 @@
 <p>
   <%= image_tag(@ad.img_url) %>
 </p>
+
+<p>
+  <%= link_to 'Back', ads_path %>
