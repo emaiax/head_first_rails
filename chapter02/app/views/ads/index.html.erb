@@ -1,0 +1,6 @@
+<h1>Ads</h1>
+
+<% @ads.each do |myad| %>
+  <%= link_to myad.name, ad_path(myad) %>
+  <br />
+<% end %>
