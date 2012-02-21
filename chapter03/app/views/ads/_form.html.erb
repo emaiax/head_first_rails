@@ -1,0 +1,48 @@
+<p id="notice"><%= notice %></p>
+
+<%= form_for(@ad) do |myad| %>
+	<% if @ad.errors.any? %>
+		<div id="errorExplanation">
+			<h4><%= pluralize(@ad.errors.count, "error") %> prohibited this post from being saved:</h4>
+			<ul>
+				<% @ad.errors.full_messages.each do |msg| %>
+				  <li><%= msg %></li>
+				<% end %>
+			</ul>
+		</div>
+	<% end %>
+
+	<p>
+	  <b>Name:</b><br />
+	  <%= myad.text_field :name %>
+	</p>
+
+	<p>
+	  <b>Description:</b><br />
+	  <%= myad.text_area :description %>
+	</p>
+
+	<p>
+	  <b>Price:</b><br />
+	  <%= myad.text_field :price %>
+	</p>
+
+	<p>
+	  <b>Seller #:</b><br />
+	  <%= myad.text_field :seller_id %>
+	</p>
+
+	<p>
+	  <b>Email:</b><br />
+	  <%= myad.text_field :email %>
+	</p>
+
+	<p>
+	  <b>Image URL:</b><br />
+	  <%= myad.text_field :img_url %>
+	</p>
+	
+	<p>
+	  <%= myad.submit "Save Ad" %>
+	</p>
+<% end %>

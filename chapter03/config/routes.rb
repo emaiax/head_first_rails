@@ -1,6 +1,6 @@
 Chapter02::Application.routes.draw do
 	
-  resources :ads, :only => [:index, :show]
+  resources :ads
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

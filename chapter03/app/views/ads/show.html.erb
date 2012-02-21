@@ -1,6 +1,6 @@
 <% content_for :title, " - Ad: " + @ad.name %>
 
-<p id="notice"><%= notice %></p>
+<p id="notice"><b><i><%= notice %></i></b></p>
 
 <p>
   <b>Name:</b>
@@ -32,4 +32,7 @@
 </p>
 
 <p>
-  <%= link_to 'Back', ads_path %>
+  <%= link_to 'Back', ads_path %> | 
+  <%= link_to 'Edit', edit_ad_path %> |
+  <%= link_to 'Destroy', @ad, confirm: 'Are you sure?', method: :delete %>
+</p>

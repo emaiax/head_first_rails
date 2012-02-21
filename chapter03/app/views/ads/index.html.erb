@@ -1,7 +1,13 @@
 <% content_for :title, " - Index" %>
 <h1>All Ads</h1>
 
-<% @ads.each do |myad| %>
-  <%= link_to myad.name, ad_path(myad) %>
+<% @ads.each do |ad| %>
+  <%= link_to ad.name, ad_path(ad) %>
   <br />
 <% end %>
+
+<br />
+
+<p>
+  <%= link_to 'New Ad', new_ad_path %>
+</p>
