@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= "MeBay, inc." + yield(:title) %></title>
+  <%= stylesheet_link_tag    "default.css" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<h1>MeBay, inc.</h1>
+			<ul id="nav">
+				<li>
+					<%= link_to "All Ads", ads_path %>
+				</li>
+			</ul>
+		</div>
+
+		<div id="content">
+			<%= yield %>
+		</div>
+		<div id="clearfooter" />
+	</div>
+
+	<div id="footer" />
+</body>
+</html>
