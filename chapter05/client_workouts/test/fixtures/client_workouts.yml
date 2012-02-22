@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  client_name: MyString
+  trainer: MyString
+  duration_mins: 1
+  date_of_workout: 2012-02-21
+  paid_amount: 9.99
+
+two:
+  client_name: MyString
+  trainer: MyString
+  duration_mins: 1
+  date_of_workout: 2012-02-21
+  paid_amount: 9.99
