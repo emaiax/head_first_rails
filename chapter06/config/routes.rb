@@ -1,4 +1,8 @@
 Chapter06::Application.routes.draw do
+  resources :seats
+
+  resources :flights
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

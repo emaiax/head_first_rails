@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  departure: 2012-02-22 19:20:20
+  arrival: 2012-02-22 19:20:20
+  destination: MyString
+  baggage_allowance: 9.99
+  capacity: 1
+
+two:
+  departure: 2012-02-22 19:20:20
+  arrival: 2012-02-22 19:20:20
+  destination: MyString
+  baggage_allowance: 9.99
+  capacity: 1
