@@ -1,6 +1,11 @@
 class ClientWorkoutsController < ApplicationController
   # GET /client_workouts
   # GET /client_workouts.json
+	
+	def find
+		@client_workouts = ClientWorkout.find(:all, :conditions => ["client_name = ? OR trainer = ?", params[:search_string], params[:search_string]])
+	end
+	
   def index
     @client_workouts = ClientWorkout.all
 
